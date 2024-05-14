@@ -1,10 +1,10 @@
-import { Button } from "@mui/material";
+import ProjectTemplate from "../components/ProjectTemplate";
+import { project1, project2 } from "../assets/ProjectTextAssets";
+import project1_img from "../assets/project1_img.png"
 
 const Project1 = () => {
     return(
-        <div>
-             <Button href="/">Go Home</Button>
-        </div>
+        <ProjectTemplate project={project1} img={project1_img}/>
     )
 }
 

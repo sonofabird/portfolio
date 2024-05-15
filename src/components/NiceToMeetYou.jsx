@@ -11,10 +11,10 @@ const Tape = (props) => {
             top={ props.isTop ? 40 : -40}
             sx={{
                 height: 75,
-                zIndex: 'tooltip',
                 opacity: 0.85,
             }}
             src={props.tape}
+            alt="tape"
         />
     )
 }

@@ -1,17 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Box, Typography } from '@mui/material'
 import './App.css'
-import Home from "./pages/Home"
-import Project1 from "./pages/Project1"
 
 function App() {
- 
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/Project1" element={<Project1/>}/>
-        <Route path="/*" element={<Home/>}/>
-      </Routes>
-    </BrowserRouter>
+    <>
+    <Box textAlign='left'>
+      <Typography variant='h1' width={576} height={303}>kenzie hisako dalton</Typography>
+      <Typography>product designer + illustrator + programmer</Typography>
+    </Box>
+    </>
   )
 }
 

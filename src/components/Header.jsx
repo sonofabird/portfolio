@@ -7,7 +7,7 @@ const Header = () => {
         
         <Box display="flex" >
             <Box textAlign='left'>
-                <Typography variant='h1' width={576} height={303}>kenzie hisako dalton</Typography>
+                <Typography variant='inconsolata-title' width={576} height={303}>kenzie hisako dalton</Typography>
                 <Typography>product designer + illustrator + programmer</Typography>
             </Box>
             <img src={Icon} width="45%"></img>

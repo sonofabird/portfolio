@@ -15,47 +15,48 @@ function App() {
     <>
       <Header/>
       <Bio/>
-      {  
+      {
         projectBackground.map((paragraph,index)=>(
           <ProjectParagraph 
-          title={paragraph.title} 
-          subtitle={paragraph.subtitle} 
-          body={paragraph.body}
-          key={index}/>
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
         ))
       }
 
       {
          discovery.map((paragraph,index)=>(
           <ProjectParagraph 
-          title={paragraph.title} 
-          subtitle={paragraph.subtitle} 
-          body={paragraph.body}
-          key={index}/>
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
         ))
       }
 
       {
          design.map((paragraph,index)=>(
           <ProjectParagraph 
-          title={paragraph.title} 
-          subtitle={paragraph.subtitle} 
-          body={paragraph.body}
-          key={index}/>
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
         ))
       }
-
-{
-         outcomes.map((paragraph,index)=>(
+      {
+        outcomes.map((paragraph,index)=>(
           <ProjectParagraph 
-          title={paragraph.title} 
-          subtitle={paragraph.subtitle} 
-          body={paragraph.body}
-          key={index}/>
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
         ))
       }
-
-     
     </>
   )
 }

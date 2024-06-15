@@ -1,5 +1,6 @@
 import { AppBar, Box, Typography, Toolbar, Menu, MenuItem, Container } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [anchorElUser, setAnchorElUser] = useState(null);
@@ -20,7 +21,9 @@ const Navbar = () => {
                     <Box display="flex" flexDirection="row" sx={{ width: "100%" }} justifyContent="space-between">
                         <Typography color="black">MHD</Typography>
                         <Box sx={{ width: "30%" }} display="flex" flexDirection="row" justifyContent="space-between">
-                            <Typography color="black">Home</Typography>
+                            <Link to="/" smooth duration={500}>
+                                <Typography color="black">Home</Typography>
+                            </Link>
                             <Typography color="black" onClick={handleOpenUserMenu} component="span" >Project1</Typography>
                             <Typography color="black">About</Typography>
                         </Box>
@@ -44,7 +47,11 @@ const Navbar = () => {
                         >
                         {sections.map((section) => (
                             <MenuItem key={section} onClick={handleCloseUserMenu}>
-                            <Typography textAlign="center">{section}</Typography>
+                                <Link to={'/'} smooth duration={500}>
+                                    <Typography color="black">
+                                        {section}
+                                    </Typography>
+                                </Link>
                             </MenuItem>
                         ))}
                         </Menu>

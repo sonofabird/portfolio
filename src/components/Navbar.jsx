@@ -18,11 +18,11 @@ const Navbar = () => {
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Box display="flex" flexDirection="row" sx={{ width: "100%" }} justifyContent="space-between">
-                        <Typography>MHD</Typography>
+                        <Typography color="black">MHD</Typography>
                         <Box sx={{ width: "30%" }} display="flex" flexDirection="row" justifyContent="space-between">
-                            <Typography>Home</Typography>
-                            <Typography onClick={handleOpenUserMenu} component="span" >Project1</Typography>
-                            <Typography>About</Typography>
+                            <Typography color="black">Home</Typography>
+                            <Typography color="black" onClick={handleOpenUserMenu} component="span" >Project1</Typography>
+                            <Typography color="black">About</Typography>
                         </Box>
                     </Box>
                     <Box sx={{ flexGrow: 0 }}>
@@ -32,12 +32,12 @@ const Navbar = () => {
                             anchorEl={anchorElUser}
                             anchorOrigin={{
                                 vertical: 'top',
-                                horizontal: 'right',
+                                horizontal: 'center',
                             }}
                             keepMounted
                             transformOrigin={{
                                 vertical: 'top',
-                                horizontal: 'right',
+                                horizontal: 'center',
                             }}
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}

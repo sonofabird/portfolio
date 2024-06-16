@@ -1,10 +1,15 @@
 import Bio from './components/Bio'
 import Header from './components/Header'
 import './App.css'
+
 import ProjectParagraph from './components/ProjectParagraph'
 import Text from './assets/p1/Text'
-// import projectBackgroundImage from './assets/p1/ImageIndex'
+//import projectBackgroundImage from './assets/p1/ImageIndex'
 //import { projectBackgroundImage } from './assets/p1'
+=======
+//import Navbar from './components/Navbar'
+//import { Element } from "react-scroll"
+
 
 function App() {
 
@@ -15,6 +20,7 @@ function App() {
 
   return (
     <>
+
       <Header/>
       <Bio/>
       {
@@ -61,6 +67,13 @@ function App() {
           />
         ))
       }
+
+      //<Navbar/>
+      //<Element name="/">
+        //<Header/>
+        //<Bio/>
+     // </Element>
+
     </>
   )
 }

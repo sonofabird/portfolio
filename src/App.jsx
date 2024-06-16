@@ -3,6 +3,9 @@ import Header from './components/Header'
 import './App.css'
 import ProjectParagraph from './components/ProjectParagraph'
 import Text from './assets/p1/Text'
+import Image from './components/Image'
+// import projectBackgroundImage from './assets/p1/ImageIndex'
+import { projectBackgroundImage } from './assets/p1'
 
 function App() {
 
@@ -26,6 +29,13 @@ function App() {
         ))
       }
 
+      <Image
+      
+        imageSRC = {projectBackgroundImage.imageSRC}
+        caption = {projectBackgroundImage.caption}
+      />
+      
+      
       {
          discovery.map((paragraph,index)=>(
           <ProjectParagraph 

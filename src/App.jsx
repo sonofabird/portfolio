@@ -6,9 +6,8 @@ import ProjectParagraph from './components/ProjectParagraph'
 import Text from './assets/p1/Text'
 //import projectBackgroundImage from './assets/p1/ImageIndex'
 //import { projectBackgroundImage } from './assets/p1'
-=======
-//import Navbar from './components/Navbar'
-//import { Element } from "react-scroll"
+import Navbar from './components/Navbar'
+import { Element } from "react-scroll"
 
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <>
-
+      <Navbar/>
       <Header/>
       <Bio/>
       {
@@ -67,12 +66,6 @@ function App() {
           />
         ))
       }
-
-      //<Navbar/>
-      //<Element name="/">
-        //<Header/>
-        //<Bio/>
-     // </Element>
 
     </>
   )

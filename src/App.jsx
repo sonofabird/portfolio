@@ -1,18 +1,79 @@
 import Bio from './components/Bio'
 import Header from './components/Header'
 import './App.css'
-import Navbar from './components/Navbar'
-import { Element } from "react-scroll"
+
+import ProjectParagraph from './components/ProjectParagraph'
+import Text from './assets/p1/Text'
+//import projectBackgroundImage from './assets/p1/ImageIndex'
+//import { projectBackgroundImage } from './assets/p1'
+=======
+//import Navbar from './components/Navbar'
+//import { Element } from "react-scroll"
+
 
 function App() {
 
+  const projectBackground = Text.projectBackground
+  const discovery = Text.discovery
+  const design = Text.design
+  const outcomes = Text.outcomes
+
   return (
     <>
-      <Navbar/>
-      <Element name="/">
-        <Header/>
-        <Bio/>
-      </Element>
+
+      <Header/>
+      <Bio/>
+      {
+        projectBackground.map((paragraph,index)=>(
+          <ProjectParagraph 
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
+        ))
+      }
+
+
+      
+      {
+         discovery.map((paragraph,index)=>(
+          <ProjectParagraph 
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
+        ))
+      }
+
+      {
+         design.map((paragraph,index)=>(
+          <ProjectParagraph 
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
+        ))
+      }
+      {
+        outcomes.map((paragraph,index)=>(
+          <ProjectParagraph 
+            title={paragraph.title} 
+            subtitle={paragraph.subtitle} 
+            body={paragraph.body}
+            key={index}
+          />
+        ))
+      }
+
+      //<Navbar/>
+      //<Element name="/">
+        //<Header/>
+        //<Bio/>
+     // </Element>
+
     </>
   )
 }

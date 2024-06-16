@@ -1,6 +1,10 @@
 import Bio from './components/Bio'
 import Header from './components/Header'
 import './App.css'
+import TileGrid from './components/TileGrid'
+import Proj1Desc from './assets/p1/Proj1Desc'
+import TileList from './components/TileList'
+import Proj1Features from './assets/p1/Proj1Features'
 
 import ProjectParagraph from './components/ProjectParagraph'
 import Text from './assets/p1/Text'
@@ -19,6 +23,10 @@ function App() {
 
   return (
     <>
+
+     //<TileGrid description={Proj1Desc}/>
+     //<TileList description={Proj1Features.description} features={Proj1Features.features}/>
+
       <Navbar/>
       <Header/>
       <Bio/>
@@ -66,7 +74,6 @@ function App() {
           />
         ))
       }
-
     </>
   )
 }

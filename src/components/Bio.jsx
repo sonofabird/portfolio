@@ -4,7 +4,7 @@ import pink_tape from '../assets/home/pink_tape.png';
 
 const Bio = () => {
   return (
-    <Box paddingBottom="30%">
+    <Box paddingBottom="10%" paddingX="5%">
       <Box position="absolute" marginTop={-8} paddingLeft="10%" maxWidth="60%">
         <img src={grid_tape} width="100%" />
       </Box>
@@ -29,7 +29,7 @@ const Bio = () => {
         <Typography variant="h3" paddingBottom="5%" color="#FFFFFF">
           nice to meet you!
         </Typography>
-        <Typography fontSize="32px" color="#FFFFFF">
+        <Typography fontSize="24px" color="#FFFFFF">
           I am a{' '}
           <b>
             <i>product designer</i>

@@ -4,10 +4,10 @@ import preview from "../assets/p1/preview.png";
 
 const ProjectHeader = () => {
   return (
-    <Box sx={{ height: "100vh" }}>
+    <Box sx={{ height: "110vh" }} paddingX="10%" paddingBottom="10%">
       <Box>
         <img src={project_head} />
-        <Typography variant="h5" textAlign={"left"} width={500}>
+        <Typography variant="bullets" textAlign={"left"} width={500}>
           Mentra AI is a platform in which starting entrepreneurs can receive
           guidance while building a business plan in a low-pressure environment.
           The platform is centred around the Mentra AI chatbot, which gives

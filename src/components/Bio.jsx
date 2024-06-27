@@ -5,7 +5,7 @@ import pink_tape from '../assets/home/pink_tape.png';
 const Bio = () => {
   return (
     <Box paddingBottom="30%">
-      <Box position="absolute" marginTop={-8} paddingLeft="10%" width="60%">
+      <Box position="absolute" marginTop={-8} paddingLeft="10%" maxWidth="60%">
         <img src={grid_tape} width="100%" />
       </Box>
 

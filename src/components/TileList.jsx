@@ -38,7 +38,12 @@ const TileList = (props) => {
           padding="10%"
           flexDirection="column"
         >
-          <Typography fontSize="100%" color="#3A00B5" paddingBottom={3} variant="bullets">
+          <Typography
+            fontSize="100%"
+            color="#3A00B5"
+            paddingBottom={3}
+            variant="bullets"
+          >
             {props.description}
           </Typography>
           <List sx={{ listStyleType: "disc", pl: 4 }}>

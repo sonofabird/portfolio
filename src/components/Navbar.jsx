@@ -43,85 +43,170 @@ const Navbar = () => {
   }, [anchorElUser]);
 
   return (
-    <AppBar position="sticky" sx={{ bgcolor: "#FFFAF8" }} elevation={0}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box
-            paddingX="5%"
-            display="flex"
-            flexDirection="row"
-            sx={{ width: "100%" }}
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <Typography variant="navbar" color="black">
-              KHD
-            </Typography>
-            <Box
-              width="50%"
-              display="flex"
-              flexDirection="row"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Link to="/" smooth duration={500}>
+    <Box>
+      {screen.width > 400 ? (
+        <AppBar position="sticky" sx={{ bgcolor: "#FFFAF8" }} elevation={0}>
+          <Container maxWidth="xl">
+            <Toolbar disableGutters>
+              <Box
+                paddingX="5%"
+                display="flex"
+                flexDirection="row"
+                sx={{ width: "100%" }}
+                justifyContent="space-between"
+                alignItems="center"
+              >
                 <Typography variant="navbar" color="black">
-                  home
+                  KHD
                 </Typography>
-              </Link>
-              <Link>
-                <Typography
-                  variant="navbar"
-                  color="black"
-                  onClick={handleOpenUserMenu}
-                  component="span"
+                <Box
+                  width="50%"
+                  display="flex"
+                  flexDirection="row"
+                  justifyContent="space-between"
+                  alignItems="center"
                 >
-                  project
-                </Typography>
-              </Link>
-              <IconButton onClick={gotoLinkedIn}>
-                <Icon>
-                  <img src={LinkedInIcon} width="100%" />
-                </Icon>
-              </IconButton>
-            </Box>
-          </Box>
-          <Box sx={{ flexGrow: 0 }}>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "center",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "center",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {sections.map((section, index) => (
-                <MenuItem key={index}>
-                  <Link
-                    to={section.to}
-                    smooth
-                    duration={500}
-                    onClick={handleCloseUserMenu}
-                  >
+                  <Link to="/" smooth duration={500}>
                     <Typography variant="navbar" color="black">
-                      {section.name}
+                      home
                     </Typography>
                   </Link>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+                  <Link>
+                    <Typography
+                      variant="navbar"
+                      color="black"
+                      onClick={handleOpenUserMenu}
+                      component="span"
+                    >
+                      project
+                    </Typography>
+                  </Link>
+                  <IconButton onClick={gotoLinkedIn}>
+                    <Icon>
+                      <img src={LinkedInIcon} width="100%" />
+                    </Icon>
+                  </IconButton>
+                </Box>
+              </Box>
+              <Box sx={{ flexGrow: 0 }}>
+                <Menu
+                  sx={{ mt: "45px" }}
+                  id="menu-appbar"
+                  anchorEl={anchorElUser}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "center",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "center",
+                  }}
+                  open={Boolean(anchorElUser)}
+                  onClose={handleCloseUserMenu}
+                >
+                  {sections.map((section, index) => (
+                    <MenuItem key={index}>
+                      <Link
+                        to={section.to}
+                        smooth
+                        duration={500}
+                        onClick={handleCloseUserMenu}
+                      >
+                        <Typography variant="navbar" color="black">
+                          {section.name}
+                        </Typography>
+                      </Link>
+                    </MenuItem>
+                  ))}
+                </Menu>
+              </Box>
+            </Toolbar>
+          </Container>
+        </AppBar>
+      ) : (
+        <AppBar position="sticky" sx={{ bgcolor: "#FFFAF8" }} elevation={0}>
+          <Container maxWidth="xl">
+            <Toolbar disableGutters>
+              <Box
+                paddingX="5%"
+                display="flex"
+                flexDirection="row"
+                sx={{ width: "100%" }}
+                justifyContent="space-between"
+                alignItems="center"
+              >
+                <Typography variant="navbar" color="black">
+                  KHD
+                </Typography>
+                <Box
+                  width="50%"
+                  display="flex"
+                  flexDirection="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Link to="/" smooth duration={500}>
+                    <Typography fontSize={12} variant="navbar" color="black">
+                      home
+                    </Typography>
+                  </Link>
+                  <Link>
+                    <Typography
+                      fontSize={12}
+                      variant="navbar"
+                      color="black"
+                      onClick={handleOpenUserMenu}
+                      component="span"
+                    >
+                      project
+                    </Typography>
+                  </Link>
+                  <IconButton onClick={gotoLinkedIn}>
+                    <Icon>
+                      <img src={LinkedInIcon} width="80%" />
+                    </Icon>
+                  </IconButton>
+                </Box>
+              </Box>
+              <Box sx={{ flexGrow: 0 }}>
+                <Menu
+                  sx={{ mt: "45px" }}
+                  id="menu-appbar"
+                  anchorEl={anchorElUser}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "center",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "center",
+                  }}
+                  open={Boolean(anchorElUser)}
+                  onClose={handleCloseUserMenu}
+                >
+                  {sections.map((section, index) => (
+                    <MenuItem key={index}>
+                      <Link
+                        to={section.to}
+                        smooth
+                        duration={500}
+                        onClick={handleCloseUserMenu}
+                      >
+                        <Typography variant="navbar" color="black">
+                          {section.name}
+                        </Typography>
+                      </Link>
+                    </MenuItem>
+                  ))}
+                </Menu>
+              </Box>
+            </Toolbar>
+          </Container>
+        </AppBar>
+      )}
+    </Box>
   );
 };
 

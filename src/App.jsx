@@ -43,7 +43,6 @@ function App() {
       <ProjectHeader />
 
       <TileGrid description={Proj1Desc} />
-
       <Element name="/projectBackground">
         {' '}
         <Box paddingX="10%" paddingY="10%">

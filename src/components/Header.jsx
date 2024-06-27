@@ -8,12 +8,12 @@ const Header = () => {
     <Element name="/">
       <Box display="flex" paddingX="10%" paddingTop="5%">
         <Box textAlign="left" paddingTop="10%" width="100%">
-          <Typography lineHeight={1} variant="title">
-            kenzie hisako dalton
-          </Typography>
-          <Typography fontSize={24}>
-            product designer + illustrator + programmer
-          </Typography>
+          <img src={Name} />
+          <Box paddingX="4%" paddingY="4%">
+            <Typography fontSize={24}>
+              product designer + illustrator + programmer
+            </Typography>
+          </Box>
         </Box>
 
         <img src={Icon} width="45%"></img>

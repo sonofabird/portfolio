@@ -4,7 +4,7 @@ import Image from "./Image.jsx";
 
 const ProjectParagraph = (props) => {
   return (
-    <Box textAlign="left" paddingY="5%">
+    <Box textAlign="left" paddingTop="5%">
       <Typography variant="h4">{props.subtitle}</Typography>
       <Typography variant="h2">{props.title}</Typography>
 

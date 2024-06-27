@@ -6,8 +6,8 @@ import Name from "../assets/home/NAME.png";
 const Header = () => {
   return (
     <Element name="/">
-      <Box display="flex" paddingX="10%">
-        <Box textAlign="left" paddingTop="10%">
+      <Box display="flex" paddingX="10%" paddingTop="5%">
+        <Box textAlign="left" paddingTop="10%" width="100%">
           <Typography lineHeight={1} variant="title">
             kenzie hisako dalton
           </Typography>

@@ -23,8 +23,8 @@ const Header = () => {
         <Box display="flex" paddingX="10%" paddingTop="5%">
           <Box textAlign="left" paddingTop="10%" width="100%">
             <img src={Name} width="85%" />
-            <Box paddingX="5%" paddingY="4%">
-              <Typography fontSize={6}>
+            <Box paddingY="4%">
+              <Typography fontSize="8px">
                 product designer + illustrator + programmer
               </Typography>
             </Box>

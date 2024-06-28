@@ -30,16 +30,31 @@ const TileGrid = (props) => {
       padding="35px"
       paddingX="10%"
     >
-      <Grid container columns={{ xs: 10 }} spacing={{ xs: "72px" }}>
-        {descriptionArray.map((desc, index) => (
-          <TileGridItem
-            title={desc.title}
-            body={desc.body}
-            key={index}
-            index={index}
-          />
-        ))}
-      </Grid>
+      {screen.width > 400 ? (
+        <Grid container columns={{ xs: 10 }} spacing={{ xs: "72px" }}>
+          {descriptionArray.map((desc, index) => (
+            <TileGridItem
+              title={desc.title}
+              body={desc.body}
+              key={index}
+              index={index}
+            />
+          ))}
+        </Grid>
+      ) : (
+        <Box>
+          {descriptionArray.map((desc, index) => (
+            <Box paddingY="5%" key={index}>
+              <Typography fontSize="100%" variant="h2" fontWeight={550}>
+                {desc.title}
+              </Typography>
+              <Typography fontSize="100%" variant="b1">
+                {desc.body}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
+      )}
     </Box>
   );
 };

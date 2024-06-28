@@ -1,14 +1,14 @@
-import Bio from './components/Bio';
-import Header from './components/Header';
-import { Element } from 'react-scroll';
-import './App.css';
-import TileGrid from './components/TileGrid';
-import Proj1Desc from './assets/p1/Proj1Desc';
-import TileList from './components/TileList';
-import Proj1Features from './assets/p1/Proj1Features';
-import ProjectParagraph from './components/ProjectParagraph';
-import Text from './assets/p1/Text';
-import Image from './components/Image';
+import Bio from "./components/Bio";
+import Header from "./components/Header";
+import { Element } from "react-scroll";
+import "./App.css";
+import TileGrid from "./components/TileGrid";
+import Proj1Desc from "./assets/p1/Proj1Desc";
+import TileList from "./components/TileList";
+import Proj1Features from "./assets/p1/Proj1Features";
+import ProjectParagraph from "./components/ProjectParagraph";
+import Text from "./assets/p1/Text";
+import Image from "./components/Image";
 import {
   affinityMapImage,
   colorPaletteImage,
@@ -18,13 +18,13 @@ import {
   mentraConvoV2Image,
   wireframeImage,
   sketchImage,
-} from './assets/p1/index';
-import Navbar from './components/Navbar';
-import { Box, CssBaseline, Typography } from '@mui/material';
-import ProjectHeader from './components/ProjectHeader';
-import Proj1Findings from './assets/p1/Proj1Findings';
-import { ThemeProvider } from '@emotion/react';
-import theme from './themes/themes';
+} from "./assets/p1/index";
+import Navbar from "./components/Navbar";
+import { Box, CssBaseline, Typography } from "@mui/material";
+import ProjectHeader from "./components/ProjectHeader";
+import Proj1Findings from "./assets/p1/Proj1Findings";
+import { ThemeProvider } from "@emotion/react";
+import theme from "./themes/themes";
 
 function App() {
   const projectBackground = Text.projectBackground;
@@ -44,9 +44,11 @@ function App() {
 
       <TileGrid description={Proj1Desc} />
       <Element name="/projectBackground">
-        {' '}
+        {" "}
         <Box paddingX="10%" paddingY="10%">
-          <Typography variant="h1">PROJECT BACKGROUND</Typography>
+          <Typography fontSize={screen.width > 400 ? {} : "28px"} variant="h1">
+            PROJECT BACKGROUND
+          </Typography>
           {projectBackground.map((paragraph, index) => (
             <ProjectParagraph
               title={paragraph.title}
@@ -68,7 +70,9 @@ function App() {
 
       <Element name="/discovery">
         <Box paddingX="10%" paddingY="10%">
-          <Typography variant="h1">DISCOVERY</Typography>
+          <Typography fontSize={screen.width > 400 ? {} : "28px"} variant="h1">
+            DISCOVERY
+          </Typography>
           {discovery.map((paragraph, index) => (
             <ProjectParagraph
               title={paragraph.title}
@@ -91,7 +95,9 @@ function App() {
 
       <Element name="/design">
         <Box paddingX="10%" paddingY="10%">
-          <Typography variant="h1">DESIGN</Typography>
+          <Typography fontSize={screen.width > 400 ? {} : "28px"} variant="h1">
+            DESIGN
+          </Typography>
           {design.map((paragraph, index) => (
             <ProjectParagraph
               title={paragraph.title}
@@ -135,12 +141,20 @@ function App() {
             caption={mentraConvoV1Image.caption}
           />
 
-          <Typography variant="b1" align="left">
+          <Typography
+            fontSize={screen.width > 400 ? {} : "16px"}
+            variant="b1"
+            align="left"
+          >
             Early sample conversations felt too impersonal and robotic when our
             goal is to make Mentra feel like a true mentor that is invested in
             the user’s ideas.
           </Typography>
-          <Typography variant="b1" align="left">
+          <Typography
+            fontSize={screen.width > 400 ? {} : "16px"}
+            variant="b1"
+            align="left"
+          >
             In this example, the AI just jumps from point to point without
             showing any real interest in the idea [1]. No questions or
             suggestions are made in direct relation to what the user proposed.
@@ -151,22 +165,32 @@ function App() {
             imageSRC={mentraConvoV2Image.imageSRC}
             caption={mentraConvoV2Image.caption}
           />
-          <Typography variant="b1" align="left">
+          <Typography
+            fontSize={screen.width > 400 ? {} : "16px"}
+            variant="b1"
+            align="left"
+          >
             The final AI sample conversation aims to make Mentra feel more
             natural and friendly. In this example, Mentra actively asks and
             provides suggestions based on the user’s responses rather than just
             jumping to the next step.
           </Typography>
-          <Typography variant="b1" align="left">
+          <Typography
+            fontSize={screen.width > 400 ? {} : "16px"}
+            variant="b1"
+            align="left"
+          >
             Adding a more positive voice and the occasional emojis makes Mentra
-            feel more invested and comfortable for users to talk to.{' '}
+            feel more invested and comfortable for users to talk to.{" "}
           </Typography>
         </Box>
       </Element>
 
       <Element name="/outcomes">
         <Box paddingX="10%" paddingY="10%">
-          <Typography variant="h1">OUTCOMES</Typography>
+          <Typography fontSize={screen.width > 400 ? {} : "28px"} variant="h1">
+            OUTCOMES
+          </Typography>
           {outcomes.map((paragraph, index) => (
             <ProjectParagraph
               title={paragraph.title}

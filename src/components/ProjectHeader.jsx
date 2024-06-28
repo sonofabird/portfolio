@@ -59,7 +59,7 @@ const ProjectHeader = () => {
             justifyContent="space-between"
           >
             <Box paddingY="5%" paddingLeft="8%" minWidth="50%">
-              <Typography variant="bullets" textAlign={"left"} fontSize="50%" >
+              <Typography variant="bullets" textAlign={"left"} fontSize="16px">
                 Mentra AI is a platform in which starting entrepreneurs can
                 receive guidance while building a business plan in a
                 low-pressure environment. The platform is centred around the
@@ -67,13 +67,6 @@ const ProjectHeader = () => {
                 resources and connections relevant to their business plan.
               </Typography>
             </Box>
-            <img
-              src={preview}
-              width="100%"
-              style={{
-                transform: "translate(0%, -10%)",
-              }}
-            />
           </Box>
         </Box>
       )}
@@ -82,3 +75,11 @@ const ProjectHeader = () => {
 };
 
 export default ProjectHeader;
+
+// <img
+//               src={preview}
+//               width="100%"
+//               style={{
+//                 transform: "translate(0%, -10%)",
+//               }}
+//             />

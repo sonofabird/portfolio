@@ -19,10 +19,10 @@ const ProjectParagraph = (props) => {
       ) : (
         <Box textAlign="left" paddingY="15%">
           <Typography fontSize="60%" variant="h4">{props.subtitle}</Typography>
-          <Typography fontSize="100%" variant="h2">{props.title}</Typography>
+          <Typography fontSize="100%" variant="h2" fontWeight={550}>{props.title}</Typography>
 
           {props.body.map((bodypart, index) => (
-            <Typography  fontSize="60%" variant="b1" key={index}>
+            <Typography  fontSize="16px" variant="b1" key={index}>
               {bodypart}
             </Typography>
           ))}
